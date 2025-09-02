@@ -15,10 +15,10 @@ modelConfig:
 
 dependencies:
   "Personal Details":
-    modelFileUrl: "https://github.com/api-generation/personal-details/blob/master/generated/mtt-models/personal-details.json"
+    modelFileUrl: "https://github.com/api-generation/personal-details/blob/main/generated/mtt-models/personal-details.json"
     version: "1.0.0"
   "Core Types":
-    modelFileUrl: "https://github.com/api-generation/core-types/blob/master/generated/mtt-models/core-types.json"
+    modelFileUrl: "https://github.com/api-generation/core-types/blob/main/generated/mtt-models/core-types.json"
     version: "1.0.0"
 loader:
   configFileUrl: "https://github.com/api-generation/common-config/blob/main/common-config/config/loaders/ea-xmi/config.yaml"
@@ -33,9 +33,3 @@ generators:
   mkdocs:
     configFileUrl: "https://github.com/api-generation/common-config/blob/main/common-config/config/generators/mkdoc/config.yaml"
     outputSubDir: "docs/mkdocs"
-  aoco:
-    configFileUrl: "https://github.com/api-generation/common-config/blob/main/common-config/config/generators/aoco/config.yaml"
-    outputSubDir: "specs/aoco"
-  oml:
-    configFileUrl: "file:/common-config/blob/main/common-config/config/generators/oml/config.yaml"
-    outputSubDir: "specs/oml"
