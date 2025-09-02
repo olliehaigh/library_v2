@@ -21,15 +21,15 @@ dependencies:
     modelFileUrl: "https://github.com/api-generation/core-types/blob/main/generated/mtt-models/core-types.json"
     version: "1.0.0"
 loader:
-  configFileUrl: "https://github.com/api-generation/common-config/blob/main/common-config/config/loaders/ea-xmi/config.yaml"
+  configFileUrl: "https://github.com/api-generation/common-config/blob/main/config/loaders/ea-xmi/config.yaml"
   outputSubDir: "mtt-models"
 generators:
   graphql:
-    configFileUrl: "https://github.com/api-generation/common-config/blob/main/common-config/config/generators/graphql/config.yaml"
+    configFileUrl: "https://github.com/api-generation/common-config/blob/main/config/generators/graphql/config.yaml"
     outputSubDir: "specs/graphql"
   openapi:
-    configFileUrl: "https://github.com/api-generation/common-config/blob/main/common-config/config/generators/openapi/config.yaml"
+    configFileUrl: "https://github.com/api-generation/common-config/blob/main/config/generators/openapi/config.yaml"
     outputSubDir: "specs/openapi"
   mkdocs:
-    configFileUrl: "https://github.com/api-generation/common-config/blob/main/common-config/config/generators/mkdoc/config.yaml"
+    configFileUrl: "https://github.com/api-generation/common-config/blob/main/config/generators/mkdoc/config.yaml"
     outputSubDir: "docs/mkdocs"
