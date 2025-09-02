@@ -1,0 +1,10 @@
+xmiFilePath:  "" # This is the path relative to the basePath
+xmiFileType: "xml"
+defaults:
+  classActions:
+    - CREATE
+    - READ
+  type: Void
+  parameters:
+    lowerValue: "0"
+    upperValue: "1"

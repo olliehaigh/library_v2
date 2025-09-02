@@ -1,0 +1,41 @@
+modelFileUrl: "https://github.com/api-generation/library/blob/library-v1/library.xml"
+outputDirUrl: "https://github.com/api-generation/library/blob/library-v1/generated"
+modelConfig:
+  packageNames:
+    typesPackage: "Types Folder"
+    queriesPackage: "Interfaces"
+  defaults:
+    classDefaults:
+      classActions:
+        - CREATE
+        - READ
+      highInstanceCount: false
+      implementNode: true
+      immutable: false
+
+dependencies:
+  "Personal Details":
+    modelFileUrl: "https://github.com/api-generation/personal-details/blob/master/generated/mtt-models/personal-details.json"
+    version: "1.0.0"
+  "Core Types":
+    modelFileUrl: "https://github.com/api-generation/core-types/blob/master/generated/mtt-models/core-types.json"
+    version: "1.0.0"
+loader:
+  configFileUrl: "https://github.com/api-generation/common-config/blob/main/common-config/config/loaders/ea-xmi/config.yaml"
+  outputSubDir: "mtt-models"
+generators:
+  graphql:
+    configFileUrl: "https://github.com/api-generation/common-config/blob/main/common-config/config/generators/graphql/config.yaml"
+    outputSubDir: "specs/graphql"
+  openapi:
+    configFileUrl: "https://github.com/api-generation/common-config/blob/main/common-config/config/generators/openapi/config.yaml"
+    outputSubDir: "specs/openapi"
+  mkdocs:
+    configFileUrl: "https://github.com/api-generation/common-config/blob/main/common-config/config/generators/mkdoc/config.yaml"
+    outputSubDir: "docs/mkdocs"
+  aoco:
+    configFileUrl: "https://github.com/api-generation/common-config/blob/main/common-config/config/generators/aoco/config.yaml"
+    outputSubDir: "specs/aoco"
+  oml:
+    configFileUrl: "file:/common-config/blob/main/common-config/config/generators/oml/config.yaml"
+    outputSubDir: "specs/oml"
